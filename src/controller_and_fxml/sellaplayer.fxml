@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="795.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller_and_fxml.SellaplayerController">
+   <children>
+      <TableView fx:id="tableView" layoutY="66.0" prefHeight="730.0" prefWidth="962.0" />
+      <Pane prefHeight="63.0" prefWidth="962.0" style="-fx-background-color: #D9514EFF;">
+         <children>
+            <Button fx:id="go_back" layoutY="11.0" mnemonicParsing="false" onAction="#goBack" onMouseEntered="#change_goback" onMouseExited="#revive_goback" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: transparent;" text="GO BACK">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="774.0" layoutY="6.0" prefHeight="51.0" prefWidth="188.0" text="SELL A PLAYER" textFill="#f2f0f0">
+               <font>
+                  <Font name="Verdana Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

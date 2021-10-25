@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="1109.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller_and_fxml.TableViewController">
+   <children>
+      <Pane prefHeight="825.0" prefWidth="287.0" style="-fx-background-color: #D9514EFF;">
+         <children>
+            <ComboBox fx:id="combo_box" layoutX="19.0" layoutY="387.0" onAction="#comboAction" prefHeight="51.0" prefWidth="249.0" promptText="CLUB SEARCHES" style="-fx-background-color: transparent; -fx-font-size: 23px; -fx-font-family: 'Tw Cen MT'; -fx-border-color: #D9514EFF;">
+            </ComboBox>
+            <Button fx:id="buy" layoutX="34.0" layoutY="535.0" mnemonicParsing="false" onAction="#buyAction" onMouseEntered="#change_buy" onMouseExited="#revive_buy" prefHeight="49.0" prefWidth="146.0" style="-fx-background-color: transparent;" text="BUY PLAYER" textFill="#060706">
+               <font>
+                  <Font name="Tw Cen MT" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="sell" layoutX="22.0" layoutY="584.0" mnemonicParsing="false" onAction="#sellAction" onMouseEntered="#change_sell" onMouseExited="#revive_sell" prefHeight="49.0" prefWidth="171.0" style="-fx-background-color: transparent;" text="SELL PLAYER" textFill="#171616">
+               <font>
+                  <Font name="Tw Cen MT" size="23.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="search_box" layoutX="10.0" layoutY="327.0" onAction="#searchAction" prefHeight="51.0" prefWidth="262.0" promptText="PLAYER SEARCHES" style="-fx-background-color: transparent; -fx-font-size: 23px; -fx-font-family: 'Tw Cen MT'; -fx-border-color: #D9514EFF;" />
+            <Button fx:id="add" layoutX="28.0" layoutY="486.0" mnemonicParsing="false" onAction="#addAction" onMouseEntered="#change_add" onMouseExited="#revive_add" prefHeight="49.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="ADD PLAYER">
+               <font>
+                  <Font name="Tw Cen MT" size="23.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imageView" fitHeight="203.0" fitWidth="196.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="log_out" layoutX="120.0" layoutY="746.0" mnemonicParsing="false" onAction="#log_outAction" onMouseEntered="#change_logout" onMouseExited="#revive_logout" prefHeight="49.0" prefWidth="146.0" style="-fx-background-color: transparent;" text="LOG OUT">
+               <font>
+                  <Font name="Tw Cen MT Bold" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="all" layoutX="22.0" layoutY="253.0" mnemonicParsing="false" onAction="#allAction" onMouseEntered="#change_all" onMouseExited="#revive_all" prefHeight="49.0" prefWidth="171.0" style="-fx-background-color: transparent;" text="ALL PLAYERS">
+               <font>
+                  <Font name="Tw Cen MT" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancel_sell" layoutX="18.0" layoutY="646.0" mnemonicParsing="false" onAction="#cancel_sellAction" onMouseEntered="#change_cancelsell" onMouseExited="#revive_cancelsell" prefHeight="49.0" prefWidth="180.0" style="-fx-background-color: transparent;" text="CANCEL A SELL">
+               <font>
+                  <Font name="Tw Cen MT" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="tableView" layoutX="289.0" prefHeight="825.0" prefWidth="820.0">
+         <columns>
+
+         </columns></TableView>
+   </children>
+</AnchorPane>

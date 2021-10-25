@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="624.0" prefWidth="830.0" style="-fx-background-color: #2A2B2DFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller_and_fxml.TotalSalaryController">
+   <children>
+      <Label layoutX="193.0" layoutY="184.0" prefHeight="57.0" prefWidth="381.0" text="TOTAL SALARY OF THE CLUB IS " textFill="#d9514e">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="salary" layoutX="233.0" layoutY="272.0" prefHeight="57.0" prefWidth="269.0" text="LABEL" textFill="#d9514e">
+         <font>
+            <Font name="Verdana Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="go_back" layoutX="340.0" layoutY="417.0" mnemonicParsing="false" onAction="#go_backAction" onMouseEntered="#change_goback" onMouseExited="#revive_goback" prefHeight="57.0" prefWidth="151.0" style="-fx-background-color: transparent;" text="GO BACK" textFill="#d9514e">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

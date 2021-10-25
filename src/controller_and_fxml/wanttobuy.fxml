@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="633.0" prefWidth="871.0" style="-fx-background-color: #2A2B2DFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller_and_fxml.WantToBuyController">
+    <children>
+        <Label layoutX="97.0" layoutY="174.0" prefHeight="51.0" prefWidth="270.0" text="DO YOU WANT TO BUY" textFill="#d9514e">
+            <font>
+                <Font name="Verdana Bold" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="yes" layoutX="275.0" layoutY="397.0" mnemonicParsing="false" onAction="#yesAction" onMouseEntered="#change_yes" onMouseExited="#revive_yes" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="YES" textFill="#d9514e">
+            <font>
+                <Font name="Verdana Bold" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="no" layoutX="450.0" layoutY="397.0" mnemonicParsing="false" onAction="#noAction" onMouseEntered="#change_no" onMouseExited="#revive_no" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="NO" textFill="#d9514e">
+            <font>
+                <Font name="Verdana Bold" size="20.0" />
+            </font>
+        </Button>
+        <Label fx:id="player_name" layoutX="361.0" layoutY="174.0" prefHeight="51.0" prefWidth="429.0" text="PIERRE EMERICK AUBAMEYOUNG?" textFill="#d9514e">
+            <font>
+                <Font name="Verdana Bold" size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
